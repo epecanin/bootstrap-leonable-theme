@@ -1,0 +1,45 @@
+body {
+  margin-top: 105px; }
+
+.navbar {
+  box-shadow: 2px 2px 5px #0FCDFD;
+  opacity: 0.9;
+  background: #fff; }
+  .navbar .nav-item {
+    font-size: 1.3rem;
+    padding-right: 1.3rem; }
+
+#showcase {
+  position: relative;
+  background: url("../img/showcase.jpg") center no-repeat;
+  background-position: fixed;
+  min-height: 560px; }
+  #showcase .primary-overlay {
+    background: rgba(15, 205, 253, 0.1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+
+.info-header {
+  width: 50%;
+  margin: auto;
+  border-bottom: 1px #ddd solid; }
+
+#team img {
+  margin-top: -75px; }
+#team .card:hover {
+  background-color: #FEC300;
+  color: #fff; }
+  #team .card:hover .fab {
+    color: #fff; }
+
+@media (max-width: 768px) {
+  #showcase {
+    min-height: 500px; }
+    #showcase h1 {
+      font-size: 4rem; }
+
+  .mb-resp {
+    margin-bottom: 1rem; } }

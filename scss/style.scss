@@ -1,0 +1,69 @@
+$primary: #0FCDFD;
+$primary-overlay: rgba(15, 205, 253, 0.1);
+$myYellow: #FEC300;
+$myPink: #F40E7D;
+$myPurple: #550457;
+
+body{
+  margin-top: 105px;
+}
+
+.navbar {
+  box-shadow: 2px 2px 5px $primary;
+  opacity: 0.9;
+  background: #fff;
+
+  .nav-item {
+    font-size: 1.3rem;
+    padding-right: 1.3rem;
+  }
+}
+
+#showcase {
+  position: relative;
+  background: url("../img/showcase.jpg") center no-repeat;
+  background-position: fixed;
+  min-height: 560px;
+  .primary-overlay {
+    background: $primary-overlay;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.info-header {
+  width: 50%;
+  margin: auto;
+  border-bottom: 1px #ddd solid;
+}
+
+#team {
+  img {
+    margin-top: -75px;
+  }
+  .card:hover {
+    background-color: $myYellow;
+    color:#fff;
+    .fab {
+    color: #fff;
+    }
+  }
+
+}
+
+@media(max-width: 768px) {
+  #showcase {
+    min-height: 500px;
+
+    h1 {
+      font-size: 4rem;
+    }
+  }
+
+  .mb-resp{
+    margin-bottom: 1rem;
+  }
+}
